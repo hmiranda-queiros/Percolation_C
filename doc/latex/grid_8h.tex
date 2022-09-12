@@ -1,0 +1,109 @@
+\hypertarget{grid_8h}{\section{include/grid.h File Reference}
+\label{grid_8h}\index{include/grid.\-h@{include/grid.\-h}}
+}
+
+
+Simple definition of \hyperlink{structCell}{Cell} and \hyperlink{structGrid}{Grid}.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+Include dependency graph for grid.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCell}{Cell}
+\begin{DoxyCompactList}\small\item\em The structure representing the cells of a grid. \end{DoxyCompactList}\item 
+struct \hyperlink{structGrid}{Grid}
+\begin{DoxyCompactList}\small\item\em The structure representing the identity of a grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{grid_8h_a60bf09598e66928bf67a21a22bc17814}{typedef struct \hyperlink{structCell}{Cell} \hyperlink{grid_8h_a60bf09598e66928bf67a21a22bc17814}{Cell}}\label{grid_8h_a60bf09598e66928bf67a21a22bc17814}
+
+\begin{DoxyCompactList}\small\item\em An alias to the structure representing the cells of a grid. \end{DoxyCompactList}\item 
+\hypertarget{grid_8h_a8f9a8bbb733c9be873a366e7d7bd099a}{typedef struct \hyperlink{structGrid}{Grid} \hyperlink{grid_8h_a8f9a8bbb733c9be873a366e7d7bd099a}{Grid}}\label{grid_8h_a8f9a8bbb733c9be873a366e7d7bd099a}
+
+\begin{DoxyCompactList}\small\item\em An alias to the structure representing the identity of a grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{grid_8h_a91812535f4d35b0440a1a9616b668a88}{create\-\_\-pointer\-\_\-\-Cell} (\hyperlink{structGrid}{Grid} $\ast$p\-\_\-struct\-\_\-grid)
+\begin{DoxyCompactList}\small\item\em Allocates a memory address for the grid. \end{DoxyCompactList}\item 
+void \hyperlink{grid_8h_af0144a740c9b50bc634d6379b2a60c44}{print\-\_\-grid} (\hyperlink{structGrid}{Grid} test)
+\begin{DoxyCompactList}\small\item\em Prints the grid. \end{DoxyCompactList}\item 
+void \hyperlink{grid_8h_ac269901a71503353cbd3af13c4e5a7a8}{free\-\_\-grid} (\hyperlink{structGrid}{Grid} test)
+\begin{DoxyCompactList}\small\item\em Deallocates the grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple definition of \hyperlink{structCell}{Cell} and \hyperlink{structGrid}{Grid}. \begin{DoxyAuthor}{Author}
+Hugo M\-I\-R\-A\-N\-D\-A
+\end{DoxyAuthor}
+This is a simple definition of \hyperlink{structCell}{Cell} and \hyperlink{structGrid}{Grid} and the functions that allow to create and print them. The A\-P\-I of \hyperlink{grid_8h}{grid.\-h} is defined as follows\-:
+
+
+\begin{DoxyItemize}
+\item a function to create a grid of empty Cells.
+\item a function to print a grid.
+\item a function to deallocate a grid. 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{grid_8h_a91812535f4d35b0440a1a9616b668a88}{\index{grid.\-h@{grid.\-h}!create\-\_\-pointer\-\_\-\-Cell@{create\-\_\-pointer\-\_\-\-Cell}}
+\index{create\-\_\-pointer\-\_\-\-Cell@{create\-\_\-pointer\-\_\-\-Cell}!grid.h@{grid.\-h}}
+\subsubsection[{create\-\_\-pointer\-\_\-\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}void create\-\_\-pointer\-\_\-\-Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Grid} $\ast$}]{p\-\_\-struct\-\_\-grid}
+\end{DoxyParamCaption}
+)}}\label{grid_8h_a91812535f4d35b0440a1a9616b668a88}
+
+
+Allocates a memory address for the grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-struct\-\_\-grid} & a pointer to a \hyperlink{structGrid}{Grid} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+After the call, the p\-\_\-grid receives a memory address and so the grid is created. 
+\end{DoxyPostcond}
+\hypertarget{grid_8h_ac269901a71503353cbd3af13c4e5a7a8}{\index{grid.\-h@{grid.\-h}!free\-\_\-grid@{free\-\_\-grid}}
+\index{free\-\_\-grid@{free\-\_\-grid}!grid.h@{grid.\-h}}
+\subsubsection[{free\-\_\-grid}]{\setlength{\rightskip}{0pt plus 5cm}void free\-\_\-grid (
+\begin{DoxyParamCaption}
+\item[{{\bf Grid}}]{test}
+\end{DoxyParamCaption}
+)}}\label{grid_8h_ac269901a71503353cbd3af13c4e5a7a8}
+
+
+Deallocates the grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & a \hyperlink{structGrid}{Grid} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+After the call, the grid is deallocated. 
+\end{DoxyPostcond}
+\hypertarget{grid_8h_af0144a740c9b50bc634d6379b2a60c44}{\index{grid.\-h@{grid.\-h}!print\-\_\-grid@{print\-\_\-grid}}
+\index{print\-\_\-grid@{print\-\_\-grid}!grid.h@{grid.\-h}}
+\subsubsection[{print\-\_\-grid}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-grid (
+\begin{DoxyParamCaption}
+\item[{{\bf Grid}}]{test}
+\end{DoxyParamCaption}
+)}}\label{grid_8h_af0144a740c9b50bc634d6379b2a60c44}
+
+
+Prints the grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & a \hyperlink{structGrid}{Grid} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+After the call, the grid is printed. 
+\end{DoxyPostcond}

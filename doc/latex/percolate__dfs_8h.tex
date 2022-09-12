@@ -1,0 +1,80 @@
+\hypertarget{percolate__dfs_8h}{\section{include/percolate\-\_\-dfs.h File Reference}
+\label{percolate__dfs_8h}\index{include/percolate\-\_\-dfs.\-h@{include/percolate\-\_\-dfs.\-h}}
+}
+
+
+Functions to test if a grid percolates or not by using the depth-\/first-\/search naive algorithm.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}grid.\-h\char`\"{}}\\*
+Include dependency graph for percolate\-\_\-dfs.\-h\-:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{percolate__dfs_8h_afd5cbe49bd99620d00c4266c3cf00440}{test\-\_\-percolate\-\_\-dfs} (\hyperlink{structGrid}{Grid} test)
+\begin{DoxyCompactList}\small\item\em Tests the depth-\/first-\/search naive algorithm on a grid. \end{DoxyCompactList}\item 
+bool \hyperlink{percolate__dfs_8h_acd58407dc2b535ff39195dbf002802d2}{percolate\-\_\-dfs} (\hyperlink{structGrid}{Grid} test, \hyperlink{structCell}{Cell} $\ast$p\-\_\-g, int i, int j)
+\begin{DoxyCompactList}\small\item\em The depth-\/first-\/search naive algorithm programmed recursively. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to test if a grid percolates or not by using the depth-\/first-\/search naive algorithm. \begin{DoxyAuthor}{Author}
+Hugo M\-I\-R\-A\-N\-D\-A
+\end{DoxyAuthor}
+This are functions to generate a ppm image of a grid. The A\-P\-I of \hyperlink{percolate__dfs_8h}{percolate\-\_\-dfs.\-h} is defined as follows\-:
+
+
+\begin{DoxyItemize}
+\item a function to test the depth-\/first-\/search naive algorithm on a grid.
+\item a function corresponding to the depth-\/first-\/search naive algorithm programmed recursively. 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{percolate__dfs_8h_acd58407dc2b535ff39195dbf002802d2}{\index{percolate\-\_\-dfs.\-h@{percolate\-\_\-dfs.\-h}!percolate\-\_\-dfs@{percolate\-\_\-dfs}}
+\index{percolate\-\_\-dfs@{percolate\-\_\-dfs}!percolate_dfs.h@{percolate\-\_\-dfs.\-h}}
+\subsubsection[{percolate\-\_\-dfs}]{\setlength{\rightskip}{0pt plus 5cm}bool percolate\-\_\-dfs (
+\begin{DoxyParamCaption}
+\item[{{\bf Grid}}]{test, }
+\item[{{\bf Cell} $\ast$}]{p\-\_\-g, }
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{percolate__dfs_8h_acd58407dc2b535ff39195dbf002802d2}
+
+
+The depth-\/first-\/search naive algorithm programmed recursively. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & a \hyperlink{structGrid}{Grid} structure. \\
+\hline
+{\em p\-\_\-g} & a pointer to the grid. \\
+\hline
+{\em i} & the row of the cell to test \\
+\hline
+{\em j} & the column of the cell to test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool saying if the grid percolates or not. 
+\end{DoxyReturn}
+\hypertarget{percolate__dfs_8h_afd5cbe49bd99620d00c4266c3cf00440}{\index{percolate\-\_\-dfs.\-h@{percolate\-\_\-dfs.\-h}!test\-\_\-percolate\-\_\-dfs@{test\-\_\-percolate\-\_\-dfs}}
+\index{test\-\_\-percolate\-\_\-dfs@{test\-\_\-percolate\-\_\-dfs}!percolate_dfs.h@{percolate\-\_\-dfs.\-h}}
+\subsubsection[{test\-\_\-percolate\-\_\-dfs}]{\setlength{\rightskip}{0pt plus 5cm}bool test\-\_\-percolate\-\_\-dfs (
+\begin{DoxyParamCaption}
+\item[{{\bf Grid}}]{test}
+\end{DoxyParamCaption}
+)}}\label{percolate__dfs_8h_afd5cbe49bd99620d00c4266c3cf00440}
+
+
+Tests the depth-\/first-\/search naive algorithm on a grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & a \hyperlink{structGrid}{Grid} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool saying if the grid percolates or not. 
+\end{DoxyReturn}

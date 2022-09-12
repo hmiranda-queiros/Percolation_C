@@ -1,0 +1,86 @@
+\hypertarget{loader_8h}{\section{include/loader.h File Reference}
+\label{loader_8h}\index{include/loader.\-h@{include/loader.\-h}}
+}
+
+
+Functions to read a text file in order to fill a grid and its corresponding structure.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}grid.\-h\char`\"{}}\\*
+Include dependency graph for loader.\-h\-:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{loader_8h_aa7ec5413eaa9028be0b6da3b72f463bb}{get\-\_\-shape} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, int $\ast$p\-\_\-height, int $\ast$p\-\_\-width)
+\begin{DoxyCompactList}\small\item\em Reads the shape of a grid from a text file and puts it into the \hyperlink{structGrid}{Grid} structure. \end{DoxyCompactList}\item 
+int \hyperlink{loader_8h_a1f9f178c96de4639a38a1cfba9bef7ea}{build\-\_\-struct} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \hyperlink{structGrid}{Grid} test)
+\begin{DoxyCompactList}\small\item\em Fills a grid from a text file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to read a text file in order to fill a grid and its corresponding structure. \begin{DoxyAuthor}{Author}
+Hugo M\-I\-R\-A\-N\-D\-A
+\end{DoxyAuthor}
+This are functions to read a text file in order to fill a grid and its corresponding structure. The A\-P\-I of \hyperlink{loader_8h}{loader.\-h} is defined as follows\-:
+
+
+\begin{DoxyItemize}
+\item a function to read the shape of a grid from a text file.
+\item a function to fill a grid from a text file. 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{loader_8h_a1f9f178c96de4639a38a1cfba9bef7ea}{\index{loader.\-h@{loader.\-h}!build\-\_\-struct@{build\-\_\-struct}}
+\index{build\-\_\-struct@{build\-\_\-struct}!loader.h@{loader.\-h}}
+\subsubsection[{build\-\_\-struct}]{\setlength{\rightskip}{0pt plus 5cm}int build\-\_\-struct (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf Grid}}]{test}
+\end{DoxyParamCaption}
+)}}\label{loader_8h_a1f9f178c96de4639a38a1cfba9bef7ea}
+
+
+Fills a grid from a text file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em argv} & a string containing the name of the text file. \\
+\hline
+{\em test} & a \hyperlink{structGrid}{Grid} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int corresponding to the success of the function. 
+\end{DoxyReturn}
+\hypertarget{loader_8h_aa7ec5413eaa9028be0b6da3b72f463bb}{\index{loader.\-h@{loader.\-h}!get\-\_\-shape@{get\-\_\-shape}}
+\index{get\-\_\-shape@{get\-\_\-shape}!loader.h@{loader.\-h}}
+\subsubsection[{get\-\_\-shape}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-shape (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}, }
+\item[{int $\ast$}]{p\-\_\-height, }
+\item[{int $\ast$}]{p\-\_\-width}
+\end{DoxyParamCaption}
+)}}\label{loader_8h_aa7ec5413eaa9028be0b6da3b72f463bb}
+
+
+Reads the shape of a grid from a text file and puts it into the \hyperlink{structGrid}{Grid} structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em argv} & a string containing the name of the text file. \\
+\hline
+{\em p\-\_\-height} & a pointer to the height of a \hyperlink{structGrid}{Grid} structure. \\
+\hline
+{\em p\-\_\-width} & a pointer to the width of a \hyperlink{structGrid}{Grid} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int corresponding to the success of the function. 
+\end{DoxyReturn}

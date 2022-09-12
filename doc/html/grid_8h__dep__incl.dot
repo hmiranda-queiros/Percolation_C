@@ -1,0 +1,14 @@
+digraph "include/grid.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="include/grid.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="include/image_generator.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$image__generator_8h.html",tooltip="Functions to generate a ppm image of a grid. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="include/loader.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$loader_8h.html",tooltip="Functions to read a text file in order to fill a grid and its corresponding structure. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="include/monte_carlo\l_dfs.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$monte__carlo__dfs_8h.html",tooltip="A function that runs the Monte-Carlo simulation with the depth-first-search naive algorithm..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="include/percolate_dfs.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$percolate__dfs_8h.html",tooltip="Functions to test if a grid percolates or not by using the depth-first-search naive algorithm..."];
+}

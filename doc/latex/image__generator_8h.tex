@@ -1,0 +1,83 @@
+\hypertarget{image__generator_8h}{\section{include/image\-\_\-generator.h File Reference}
+\label{image__generator_8h}\index{include/image\-\_\-generator.\-h@{include/image\-\_\-generator.\-h}}
+}
+
+
+Functions to generate a ppm image of a grid.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}grid.\-h\char`\"{}}\\*
+Include dependency graph for image\-\_\-generator.\-h\-:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{image__generator_8h_a21f3dee923c57f5f5ace9284252440de}{image\-\_\-generator} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, \hyperlink{structGrid}{Grid} $\ast$p\-\_\-struct\-\_\-grid)
+\begin{DoxyCompactList}\small\item\em Generates a ppm image of a grid from a text file. \end{DoxyCompactList}\item 
+int \hyperlink{image__generator_8h_a8effece6a4a8a38249cbe32a90a608fc}{image\-\_\-generator\-\_\-monte\-\_\-carlo} (\hyperlink{structGrid}{Grid} $\ast$p\-\_\-struct\-\_\-grid, int nb\-\_\-simu, int seed)
+\begin{DoxyCompactList}\small\item\em Generates a ppm image of a grid from the Monte-\/\-Carlo simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to generate a ppm image of a grid. \begin{DoxyAuthor}{Author}
+Hugo M\-I\-R\-A\-N\-D\-A
+\end{DoxyAuthor}
+This are functions to generate a ppm image of a grid. The A\-P\-I of \hyperlink{image__generator_8h}{image\-\_\-generator.\-h} is defined as follows\-:
+
+
+\begin{DoxyItemize}
+\item a function to generate a ppm image of a grid from a text file.
+\item a function to generate a ppm image of a grid from the Monte-\/\-Carlo simulation. 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{image__generator_8h_a21f3dee923c57f5f5ace9284252440de}{\index{image\-\_\-generator.\-h@{image\-\_\-generator.\-h}!image\-\_\-generator@{image\-\_\-generator}}
+\index{image\-\_\-generator@{image\-\_\-generator}!image_generator.h@{image\-\_\-generator.\-h}}
+\subsubsection[{image\-\_\-generator}]{\setlength{\rightskip}{0pt plus 5cm}int image\-\_\-generator (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf Grid} $\ast$}]{p\-\_\-struct\-\_\-grid}
+\end{DoxyParamCaption}
+)}}\label{image__generator_8h_a21f3dee923c57f5f5ace9284252440de}
+
+
+Generates a ppm image of a grid from a text file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em argv} & a string containing the name of the text file. \\
+\hline
+{\em p\-\_\-struct\-\_\-grid} & a pointer to a \hyperlink{structGrid}{Grid} structure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int corresponding to the success of the function. 
+\end{DoxyReturn}
+\hypertarget{image__generator_8h_a8effece6a4a8a38249cbe32a90a608fc}{\index{image\-\_\-generator.\-h@{image\-\_\-generator.\-h}!image\-\_\-generator\-\_\-monte\-\_\-carlo@{image\-\_\-generator\-\_\-monte\-\_\-carlo}}
+\index{image\-\_\-generator\-\_\-monte\-\_\-carlo@{image\-\_\-generator\-\_\-monte\-\_\-carlo}!image_generator.h@{image\-\_\-generator.\-h}}
+\subsubsection[{image\-\_\-generator\-\_\-monte\-\_\-carlo}]{\setlength{\rightskip}{0pt plus 5cm}int image\-\_\-generator\-\_\-monte\-\_\-carlo (
+\begin{DoxyParamCaption}
+\item[{{\bf Grid} $\ast$}]{p\-\_\-struct\-\_\-grid, }
+\item[{int}]{nb\-\_\-simu, }
+\item[{int}]{seed}
+\end{DoxyParamCaption}
+)}}\label{image__generator_8h_a8effece6a4a8a38249cbe32a90a608fc}
+
+
+Generates a ppm image of a grid from the Monte-\/\-Carlo simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-struct\-\_\-grid} & a pointer to a \hyperlink{structGrid}{Grid} structure. \\
+\hline
+{\em nb\-\_\-simu} & the number of the simulation of this grid. \\
+\hline
+{\em seed} & the seed used to initialize rand.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int corresponding to the success of the function. 
+\end{DoxyReturn}

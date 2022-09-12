@@ -1,0 +1,58 @@
+\hypertarget{monte__carlo__dfs_8h}{\section{include/monte\-\_\-carlo\-\_\-dfs.h File Reference}
+\label{monte__carlo__dfs_8h}\index{include/monte\-\_\-carlo\-\_\-dfs.\-h@{include/monte\-\_\-carlo\-\_\-dfs.\-h}}
+}
+
+
+A function that runs the Monte-\/\-Carlo simulation with the depth-\/first-\/search naive algorithm.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}grid.\-h\char`\"{}}\\*
+Include dependency graph for monte\-\_\-carlo\-\_\-dfs.\-h\-:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{monte__carlo__dfs_8h_a841a256599a0460eb9790624091e7b0f}{monte\-\_\-carlo} (\hyperlink{structGrid}{Grid} $\ast$p\-\_\-struct\-\_\-grid, int height, int width, int seed, int nb\-\_\-tot\-\_\-simu)
+\begin{DoxyCompactList}\small\item\em Runs the Monte-\/\-Carlo simulation with the depth-\/first-\/search naive algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A function that runs the Monte-\/\-Carlo simulation with the depth-\/first-\/search naive algorithm. \begin{DoxyAuthor}{Author}
+Hugo M\-I\-R\-A\-N\-D\-A
+\end{DoxyAuthor}
+This is a function that runs the Monte-\/\-Carlo simulation with the depth-\/first-\/search naive algorithm. The A\-P\-I of \hyperlink{monte__carlo__dfs_8h}{monte\-\_\-carlo\-\_\-dfs.\-h} is defined as follows\-:
+
+
+\begin{DoxyItemize}
+\item a function that runs the Monte-\/\-Carlo simulation with the depth-\/first-\/search naive algorithm.. 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{monte__carlo__dfs_8h_a841a256599a0460eb9790624091e7b0f}{\index{monte\-\_\-carlo\-\_\-dfs.\-h@{monte\-\_\-carlo\-\_\-dfs.\-h}!monte\-\_\-carlo@{monte\-\_\-carlo}}
+\index{monte\-\_\-carlo@{monte\-\_\-carlo}!monte_carlo_dfs.h@{monte\-\_\-carlo\-\_\-dfs.\-h}}
+\subsubsection[{monte\-\_\-carlo}]{\setlength{\rightskip}{0pt plus 5cm}void monte\-\_\-carlo (
+\begin{DoxyParamCaption}
+\item[{{\bf Grid} $\ast$}]{p\-\_\-struct\-\_\-grid, }
+\item[{int}]{height, }
+\item[{int}]{width, }
+\item[{int}]{seed, }
+\item[{int}]{nb\-\_\-tot\-\_\-simu}
+\end{DoxyParamCaption}
+)}}\label{monte__carlo__dfs_8h_a841a256599a0460eb9790624091e7b0f}
+
+
+Runs the Monte-\/\-Carlo simulation with the depth-\/first-\/search naive algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\-\_\-struct\-\_\-grid} & a pointer to a \hyperlink{structGrid}{Grid} structure. \\
+\hline
+{\em height} & the height of the grids. \\
+\hline
+{\em width} & the width of the grids. \\
+\hline
+{\em seed} & the seed used to initialize rand. \\
+\hline
+{\em nb\-\_\-tot\-\_\-simu} & the number total of all the Monte-\/\-Carlo simulations that we want. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,112 @@
+\hypertarget{union__find_8h}{\section{include/union\-\_\-find.h File Reference}
+\label{union__find_8h}\index{include/union\-\_\-find.\-h@{include/union\-\_\-find.\-h}}
+}
+
+
+Simple definition of \hyperlink{structCell__uf}{Cell\-\_\-uf} and \hyperlink{structGrid__uf}{Grid\-\_\-uf}.  
+
+
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+Include dependency graph for union\-\_\-find.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCell__uf}{Cell\-\_\-uf}
+\begin{DoxyCompactList}\small\item\em The structure representing the cells of a grid. \end{DoxyCompactList}\item 
+struct \hyperlink{structGrid__uf}{Grid\-\_\-uf}
+\begin{DoxyCompactList}\small\item\em The structure representing the identity of a grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{union__find_8h_a5d0e110ed2be08801cf1a6beca63f46b}{typedef struct \hyperlink{structCell__uf}{Cell\-\_\-uf} \hyperlink{union__find_8h_a5d0e110ed2be08801cf1a6beca63f46b}{Cell\-\_\-uf}}\label{union__find_8h_a5d0e110ed2be08801cf1a6beca63f46b}
+
+\begin{DoxyCompactList}\small\item\em An alias to the structure representing the cells of a grid. \end{DoxyCompactList}\item 
+\hypertarget{union__find_8h_a0e61988ce8bb4cf7ffa9e13067c5f6ae}{typedef struct \hyperlink{structGrid__uf}{Grid\-\_\-uf} \hyperlink{union__find_8h_a0e61988ce8bb4cf7ffa9e13067c5f6ae}{Grid\-\_\-uf}}\label{union__find_8h_a0e61988ce8bb4cf7ffa9e13067c5f6ae}
+
+\begin{DoxyCompactList}\small\item\em An alias to the structure representing the identity of a grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCell__uf}{Cell\-\_\-uf} $\ast$ \hyperlink{union__find_8h_a63c95fe08b86a13e3bfe2b816886c060}{create\-\_\-uf} (int nb)
+\begin{DoxyCompactList}\small\item\em Creates an union-\/find structure. \end{DoxyCompactList}\item 
+\hyperlink{structCell__uf}{Cell\-\_\-uf} $\ast$ \hyperlink{union__find_8h_ab23f0f8791cd0ce85dd6a74f8c9dfc05}{find\-\_\-uf} (\hyperlink{structCell__uf}{Cell\-\_\-uf} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Finds the subset to which a cell belongs. \end{DoxyCompactList}\item 
+void \hyperlink{union__find_8h_a31c330d16568cf54fa635d7fa9cd846b}{merge\-\_\-uf} (\hyperlink{structCell__uf}{Cell\-\_\-uf} $\ast$e1, \hyperlink{structCell__uf}{Cell\-\_\-uf} $\ast$e2)
+\begin{DoxyCompactList}\small\item\em Merges the subsets to which two cells belong. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple definition of \hyperlink{structCell__uf}{Cell\-\_\-uf} and \hyperlink{structGrid__uf}{Grid\-\_\-uf}. \begin{DoxyAuthor}{Author}
+Hugo M\-I\-R\-A\-N\-D\-A
+\end{DoxyAuthor}
+This is a simple definition of \hyperlink{structCell__uf}{Cell\-\_\-uf} and \hyperlink{structGrid__uf}{Grid\-\_\-uf} and the functions that allow to create and find and merge them. The A\-P\-I of \hyperlink{union__find_8h}{union\-\_\-find.\-h} is defined as follows\-:
+
+
+\begin{DoxyItemize}
+\item a function to create an union-\/find structure.
+\item a function to find the subset to which an cells belongs.
+\item a function to merge the subsets to which two cells belong. 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{union__find_8h_a63c95fe08b86a13e3bfe2b816886c060}{\index{union\-\_\-find.\-h@{union\-\_\-find.\-h}!create\-\_\-uf@{create\-\_\-uf}}
+\index{create\-\_\-uf@{create\-\_\-uf}!union_find.h@{union\-\_\-find.\-h}}
+\subsubsection[{create\-\_\-uf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-\_\-uf}$\ast$ create\-\_\-uf (
+\begin{DoxyParamCaption}
+\item[{int}]{nb}
+\end{DoxyParamCaption}
+)}}\label{union__find_8h_a63c95fe08b86a13e3bfe2b816886c060}
+
+
+Creates an union-\/find structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb} & an int corresponding to the number of cells to create.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The memory address of the grid. 
+\end{DoxyReturn}
+\hypertarget{union__find_8h_ab23f0f8791cd0ce85dd6a74f8c9dfc05}{\index{union\-\_\-find.\-h@{union\-\_\-find.\-h}!find\-\_\-uf@{find\-\_\-uf}}
+\index{find\-\_\-uf@{find\-\_\-uf}!union_find.h@{union\-\_\-find.\-h}}
+\subsubsection[{find\-\_\-uf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-\_\-uf}$\ast$ find\-\_\-uf (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-\_\-uf} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{union__find_8h_ab23f0f8791cd0ce85dd6a74f8c9dfc05}
+
+
+Finds the subset to which a cell belongs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the memory address of a cell.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The memory address of the representative of the subset of this cell. 
+\end{DoxyReturn}
+\hypertarget{union__find_8h_a31c330d16568cf54fa635d7fa9cd846b}{\index{union\-\_\-find.\-h@{union\-\_\-find.\-h}!merge\-\_\-uf@{merge\-\_\-uf}}
+\index{merge\-\_\-uf@{merge\-\_\-uf}!union_find.h@{union\-\_\-find.\-h}}
+\subsubsection[{merge\-\_\-uf}]{\setlength{\rightskip}{0pt plus 5cm}void merge\-\_\-uf (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-\_\-uf} $\ast$}]{e1, }
+\item[{{\bf Cell\-\_\-uf} $\ast$}]{e2}
+\end{DoxyParamCaption}
+)}}\label{union__find_8h_a31c330d16568cf54fa635d7fa9cd846b}
+
+
+Merges the subsets to which two cells belong. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e1} & the memory address of a cell. \\
+\hline
+{\em e2} & the memory address of a cell.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+After the call, the two subsets are merged. 
+\end{DoxyPostcond}
